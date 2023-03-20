@@ -26,7 +26,7 @@ void partition(int *a, int n, int x)
 	{
 		while(i<j && a[i] <= x)
 			++i;
-		while(i<j && a[i] > x)
+		while(i<j && a[j] > x)
 			--j;
 
 		temp = a[i];
