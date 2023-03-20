@@ -19,7 +19,7 @@ void main()
 
 void partition(int *a, int n, int x)
 {
-	int i,j, temp, k;
+	int i,j, temp;
 	i = 0;
 	j = n-1;
 	while(i<j)
