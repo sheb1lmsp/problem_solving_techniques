@@ -33,19 +33,16 @@ void display(int *a, int n)
 void shell_sort(int *a, int n, int incr)
 {
 	int i, j, key;
-	while(incr>=1)
+	for(incr; incr>=1; incr = incr - 2)
 	{
 		for(i=incr;i<n;i++)
 		{
 			key = a[i];
-			j=i-incr;
-			while(j>=0 && key < a[j])
+			for(j=i-incr; j>=0 && key < a[j]; j = j-incr)
 			{
 				a[j+incr] = a[j];
-				j = j-incr;
 			}
 			a[j+incr] = key;
 		}
-		incr = incr-2;
 	}
 }
