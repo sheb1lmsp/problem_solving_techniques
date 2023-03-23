@@ -61,11 +61,9 @@ void ins_sort(int *a, int n)
 	for(i=1;i<n;i++)
 	{
 		key = a[i];
-		j = i-1;
-		while(j>=0 && key > a[j])
+		for(j=i-1; j>=0 && key > a[j]; j--)
 		{
 			a[j+1] = a[j];
-			j--;
 		}
 		a[j+1] = key;
 	}
