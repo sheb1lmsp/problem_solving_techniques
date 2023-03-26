@@ -5,7 +5,7 @@ void main()
 {
 	double a, b, c, discriminant, root1, root2, realPart, imagPart;
 	printf("Enter coefficients a, b and c:\n");
-	scanf("%1f%1f%1f", &a, &b, &c);
+	scanf("%lf%lf%lf", &a, &b, &c);
 	discriminant = b * b - 4 * a * c;
 	
 	if(discriminant > 0)
